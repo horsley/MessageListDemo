@@ -74,7 +74,7 @@ typedef enum : NSUInteger {
 
 - (void)viewWillLayoutSubviews
 {
-  [_tableView layoutIfNeeded];
+  [_tableView.view layoutIfNeeded];
   [_tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_dataSource.count - 1 inSection:1]
                     atScrollPosition:UITableViewScrollPositionBottom animated:NO];
 }
