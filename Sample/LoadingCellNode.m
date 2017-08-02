@@ -21,6 +21,7 @@
     
     _indicatorNode = [[ASDisplayNode alloc] initWithViewBlock:^UIView * _Nonnull{
       _indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+      _indicator.backgroundColor = [UIColor clearColor];
       return _indicator;
     }];
     _indicatorNode.style.preferredSize = CGSizeMake(30, 30);
